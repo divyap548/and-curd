@@ -1,0 +1,13 @@
+li.not-active {
+    background-color: rgb(95, 146, 161);
+}
+
+li.active {
+    background-color: rgb(6, 46, 58);
+}
+.col-lg-2{
+    padding-left: 25px;
+}
+.card-body{
+    margin-top: 50px!important;
+}

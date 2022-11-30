@@ -1,0 +1,36 @@
+.col-md-3 {
+    background: #1478a7;
+    padding: 4%;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+.col-md-9 {
+    background: #fff;
+    padding: 3%
+}
+.bi{
+    font-size: 50px;
+    color: white;
+}
+.form-group {
+    padding-bottom: 20px;
+
+}
+.control-label {
+    font-weight: 600;
+}
+
+button {
+    background: #149ddd;
+    color: #fff;
+    font-weight: 600;
+    width: 25%;
+}
+
+button:focus {
+    box-shadow: none;
+}
+
+h4 {
+    color: white;
+}

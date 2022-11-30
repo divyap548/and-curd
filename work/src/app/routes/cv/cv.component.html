@@ -1,6 +1,141 @@
 <div class="container">
     <div class="p1">
         <h2>Curriculum Vitae</h2>
-        <span class="bar mb-5"></span>
+    </div>
+    <span class="bar mb-5"></span>
+    <div class="row">
+        <div class="col-lg-4 col-md-6">
+            <h4><strong>Education</strong></h4>
+            <ul class="resume-item">
+                <li>
+                    <h5>Master's degree 2 IT</h5>
+                    <em class="font-italic">Master of degital services<br> University of Lille, FR</em>
+                    <p class="year p-2 d-flex justify-content-center">2019 - 2020</p>
+                </li>
+                <li>
+                    <h5>Master's degree 1 IT</h5>
+                    <em class="font-italic">General Master Computer Science<br> University of Lille, FR</em>
+                    <p class="year p-2 d-flex justify-content-center">2018 - 2019</p>
+                </li>
+                <li>
+                    <h5>Bachelor's degree</h5>
+                    <em class="font-italic">Bachlor of Computer Science<br> University of Lille, FR</em>
+                    <p class="year p-2 d-flex justify-content-center">2015 - 2018</p>
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <h4><strong>Experiences</strong></h4>
+            <ul class="resume-item">
+                <li>
+                    <h5>Freelance developer</h5>
+                    <em>Scotfy, Lyon, Fr</em>
+                    <div class="d-flex flex-row">
+                        <p class="year p-2 d-flex justify-content-center">2020 - 2021 (2 months)</p>
+                        <button (click)="toggleData()" type="button" class="btn btn-primary"><span>+</span> Detail</button>
+                        <div *ngif = "toDisplay">
+                            <p>
+                                <span><strong>Mission 1: </strong>
+                                Implementation of a theme manager (colors, logo). <br></span>
+                                <span><strong>Mission 2: </strong>
+                                Setting up a virtual folder manager that can contain Qlik Sense apps. <br></span>
+                                <span><strong>Mission 3:</strong>
+                                Development of a resource saving interface. <br></span>
+                                <span><strong>Mission 4: </strong>
+                                Creating customizable web pages: Qlik Sense Mashups (In progress). <br></span>
+                                <strong>Technologies:</strong> 
+                                C#, .NET, Angular 11, Angular Materials, pgSql, Qlik Sense
+                            </p>
+                        </div>
+                    </div> 
+                </li>
+                <li>
+                    <h5>Freelance developer</h5>
+                    <em>AGC Glass Europe, Maubeuge, Fr</em>
+                    <div class="d-flex flex-row">
+                        <p class="year p-2 d-flex justify-content-center">2020 - 2021 (5 months)</p>
+                        <button type="button" class="btn btn-primary"><span>+</span>Detail</button>
+                        <!-- <p>
+                            <span><strong>Mission 1: </strong>
+                                Development of a supplier rating application by buyers. <br></span>
+                            <span><strong>Mission 2: </strong>
+                                Evolutionary and corrective maintenance of applications. <br></span>
+                            <strong>Technologies:</strong> JAVA 8, Spring, Angular 8, Angular Materials, MySql
+                        </p> -->
+                    </div>
+                </li>
+                <li>
+                    <h5>Work-study developer</h5><em>AGC Glass Europe, Maubeuge, Fr</em>
+                    <div class="d-flex flex-row">
+                        <p class="year p-2 d-flex justify-content-center">2019 - 2020 (1 year)</p>
+                        <button type="button" class="btn btn-primary"><span>+</span>Detail</button>
+                        <!-- <p>
+                            <span><strong>Mission 1: </strong>
+                                Application for managing trucks entering the site <br></span>
+                            <span><strong>Mission 2: </strong>
+                                Improving an application for creating prevention plans. <br></span>
+                            <span><strong>Mission 3: </strong>
+                                Glass order formatting application, in the interest of better readability of 
+                                priorities for productionteams. <br></span>
+                            <span><strong>Mission 4: </strong>
+                                Creating customizable web pages: Qlik Sense Mashups (In progress). <br></span>
+                           <strong>Technologies:</strong> JAVA 8, Spring, Angular 8, Angular Materials, MySql
+                        </p> -->
+                    </div>
+                </li>
+                <li>
+                    <h5>Software Developer Intern</h5>
+                    <em>Scotfy, Lyon, Fr</em>
+                    <div class="d-flex flex-row">
+                        <p class="year p-2 d-flex justify-content-center">2018 (3 months)</p>
+                        <button type="button" class="btn btn-primary"><span>+</span>Detail</button>
+                        <!-- <p>
+                            <span><strong>Mission 1: </strong>
+                                Multilingual:Implementation of a language management system to allow the user to 
+                                choose the language of interfaces, messagesand logs. <br></span>
+                            <span><strong>Mission 2: </strong>
+                                License key: Software validation using a license key based on the Windows user name. <br></span>
+                            <strong>Technologies:</strong> C#, .NET, Chiffrement AES-256
+                        </p> -->
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-4 col-md-12">
+            <div class="container row">
+                <div class="resume-item">
+                    <h4><strong>Languages</strong></h4>
+                    <div class="noProgress langue">
+                        <span><img src="assets/images/france.jpg" width="20" alt="france">
+                            <strong> French</strong>
+                            <i class="val"> Fluent</i></span>
+                    </div>
+                    <div class="noProgress langue">
+                        <span><img src="assets/images/usa.jpg" width="20" alt="USA">
+                            <strong> English</strong>
+                            <i class="val"> Good level</i></span></div>
+                </div>
+            </div>
+            <div class="container row">
+                <div class="mt-3">
+                    <h4><strong>Center of interest</strong></h4>
+                    <div class="noProgress langue">
+                        <span><i class="bi bi-0-circle"></i><strong> Sport</strong>
+                            <i class="val"> 5 years Volley Ball</i>
+                        </span>
+                    </div>
+                    <div class="noProgress langue">
+                        <span><i class="bi bi-airplane"></i><strong> Trips</strong>
+                            <i class="val"> Belgium, Spain, Netherlands, Swiss </i>
+                        </span>
+                    </div>
+                    <div class="noProgress langue">
+                        <span><i class="bi bi-controller"></i><strong> Board games </strong>
+                            <i class="val"> Checkers and dominoes game, Among US, Ludo, ..etc </i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
  </div>   

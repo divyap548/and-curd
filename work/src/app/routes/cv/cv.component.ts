@@ -11,5 +11,10 @@ export class CvComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  toDisplay = true;
+  
+  toggleData() {
+    this.toDisplay = !this.toDisplay;
+  }
 
 }
